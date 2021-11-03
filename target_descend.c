@@ -1,9 +1,9 @@
-const void *const __offload_funcs_end[0]
+const void *const __offload_func_table_end[0]
     __attribute__ ((__used__, visibility ("hidden"),
-    section (".gnu.offload_funcs"))) = { };
+    section (".gnu.offload.funcs"))) = { };
 
-const void *const __offload_vars_end[0]
+const void *const __offload_var_table_end[0]
     __attribute__ ((__used__, visibility ("hidden"),
-	section (".gnu.offload_vars"))) = { };
+	section (".gnu.offload.vars"))) = { };
 
 //gcc -c -shared -fPIC target_offloadend.c -o target_offloadend.o

@@ -1,1 +1,1 @@
-rm -rf *.o *.so *.S
+rm -rf *.o *.elf *.S *.bin
