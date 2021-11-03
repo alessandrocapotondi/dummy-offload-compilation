@@ -4,6 +4,18 @@ void __attribute__ ((__used__, section (".gnu.offload_funcs")))
     return;
 }
 
+void __attribute__ ((__used__, section (".gnu.offload_funcs")))
+    test2(void)
+{
+    int a = *(int *) 0x0004;
+    int b = *(int *) 0x0008;
+    int c = *(int *) 0x000b;
+
+    c = a + b;
+    return;
+}
+
+
 void main(void)
 {}
 
